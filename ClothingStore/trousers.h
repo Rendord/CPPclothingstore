@@ -1,6 +1,7 @@
 #pragma once
 #include "article.h"
 #include <string>
+#include <sstream>
 
 class Trousers : public Article {
 

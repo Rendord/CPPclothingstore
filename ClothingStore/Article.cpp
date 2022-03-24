@@ -4,8 +4,7 @@
 
 
 Article::Article() {
-	this->brand = "unknown";
-	this->model = "unknown";
+
 }
 
 Article::Article(std::string brand, std::string model) {
@@ -14,7 +13,7 @@ Article::Article(std::string brand, std::string model) {
 }
 
 std::string Article::toString() {
-	std::ostringstream ostr{};
+	std::ostringstream ostr;
 
 	ostr << model + " " + brand;
 

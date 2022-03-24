@@ -8,11 +8,17 @@
 
 int main()
 {
-	Article article("PME", "Commando");
-	std::cout << article.toString() << std::endl;
-	ClothingStore store("Wehkamp");
-	store.addArticle("Levi's", "501");
+	//Article article("PME", "Commando");
+	//std::cout << article.toString() << std::endl;
+	ClothingStore store("Wehkamp", 4);
+	store.addArticle("trousers Levi's 501 5");
+	store.addArticle("trousers PME Commando 6");
+	store.addArticle("jacket G-star Anorak true");
+	store.addArticle("jacket G-star Harrington false");
+
     std::cout << store.toString() << std::endl;
+
+	store.printArticles();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

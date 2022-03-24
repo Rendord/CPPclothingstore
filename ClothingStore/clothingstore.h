@@ -6,11 +6,16 @@
 class ClothingStore {
 private:
 	std::string name;
-	Article articles[100];
 	int num_articles;
+	int size;
+	Article **articles;
+
+	
 
 public:
-	ClothingStore(std::string);
-	void addArticle(std::string, std::string);
+	ClothingStore(std::string, int);
+	~ClothingStore();
+	void addArticle(std::string);
+	void printArticles();
 	std::string toString();
 };
